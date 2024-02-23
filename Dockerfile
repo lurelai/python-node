@@ -11,7 +11,9 @@ RUN apt update -y && \
     curl -fsSL https://deb.nodesource.com/setup_21.x | bash - && \
     apt-get install nodejs=21.6.2-1nodesource1 -y && \
     npm install -g npm@10.4.0 && \
-    npm install yarn -g
+    npm install yarn -g && \
+    npm install -g nodemon
+
 
 CMD ["bash"]
 
