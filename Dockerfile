@@ -14,6 +14,8 @@ RUN apt update -y && \
     npm install yarn -g && \
     npm install -g nodemon
 
+# Install vim as default
+RUN apt install vim -y
 
 CMD ["bash"]
 
